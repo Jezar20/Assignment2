@@ -36,21 +36,72 @@
         android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editText2"
-        app:layout_constraintBottom_toTopOf="@id/listView">
+        app:layout_constraintBottom_toTopOf="@id/txtSum">
 
     </Button>
+
+    <TextView
+        android:id="@+id/txtSum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Sum"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Button">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="20% Total"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSum">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtExclude1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Exclude 1"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTotal">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txtOverAllTotal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Overall Total"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtExclude1">
+
+    </TextView>
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="400dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Button"
+        app:layout_constraintTop_toBottomOf="@id/txtOverAllTotal"
         app:layout_constraintBottom_toBottomOf="parent">
 
     </ListView>
